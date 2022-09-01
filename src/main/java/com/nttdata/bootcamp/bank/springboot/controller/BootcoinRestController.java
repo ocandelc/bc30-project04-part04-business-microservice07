@@ -31,7 +31,7 @@ public class BootcoinRestController {
     }
 
     @RequestMapping(value = "/readByCodeBootcoin/{codeBootcoin}", method = RequestMethod.GET)
-    public Mono<Bootcoin> readByCodePurse(@PathVariable String codeBootcoin) {
+    public Mono<Bootcoin> readByCodeBootcoin(@PathVariable String codeBootcoin) {
         log.debug("Begin RestController readByCodePurse Bootcoin");
         return bootcoinServiceInte.readByCodeBootcoin(codeBootcoin);
     }
